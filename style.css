@@ -1,0 +1,158 @@
+/* SETANDO AS CONFIGURAÇÕES PRINCIPAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    place-content: center;
+    margin-top: 7.5%;
+    background-color: #f9f9f9;
+}
+
+a {
+    text-decoration: none;
+    color: #0175A2;
+}
+
+/* CARD PRINCIPAL */
+
+.main {
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    background: #fff;
+    justify-self: center;
+    margin-bottom: 10px;
+}
+
+/* CABEÇALHO */
+
+header {
+    display: grid;
+    grid-template-rows: 2;
+    grid-row: 40px 40px;
+    padding: 15px 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.guias {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap
+}
+
+.lingua {
+    width: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.lingua img {
+    max-width: 100%;
+    height: 100%;
+    grid-row: 1 / 2;
+}
+
+.lingua p {
+    grid-column: 2;
+    justify-self: center;
+}
+
+.lingua a {
+    color: #aaa;
+}
+
+.voltar {
+    align-self: center;
+}
+
+.logo {
+    height: 100%;
+    padding: 10px;
+    display: grid;
+    justify-items: center;
+}
+
+.logo img {
+    width: 25%;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+.titulo {
+    margin-top: 80px;
+    text-align: center;
+    color: #5e5e5e;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.principal {
+    display: grid;
+    padding: 30px 40px;
+}
+
+label {
+    text-shadow: 0px 1px 2px;
+    text-shadow: 0px -1px 2px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+
+input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 10px 8px; 
+    font-size: 16px;
+    border: 1px solid #a1a1a1;
+    border-radius: 3px;   
+    outline: none;
+}
+
+input::placeholder {
+    font-style: italic;
+    font-size: 14px;
+}
+
+input:focus {
+    box-shadow: 0 1.2px 10px #0081cc;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    font-size: 17px;
+    font-weight: 600;
+    color: #ddd;
+    background-color: #0073b2;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+}
+
+.links-ajuda {
+    display: grid;
+    padding: 30px 40px;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.novo-usuario {
+    padding: 30px 0 10px 0;
+    font-size: 14px;
+    border-top: 1px solid #ddd;
+}
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    gap: 10px;
+    font-size: 14px;
+    flex-wrap: wrap;
+}
